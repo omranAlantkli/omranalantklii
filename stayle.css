@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f4f8;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+.profile-card{
+    max-width: 472px;
+    width: 100%;
+    background-color: #086157;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.image{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 5px solid #05855e;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.image:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image:hover .profile-img {
+    transform: scale(1.1);
+}
+
+.text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.text-data .name{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.text-data .name:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.text-data .job{
+    font-size: 18px;
+    color: #b2dfdb;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.icon {
+    font-size: 36px;
+    color: #80cbc4;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #00e676;
+}
+
+.level{
+    font-size: 20px;
+    color: #aed581;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 8px 15px;
+    border-radius: 8px;
+}
